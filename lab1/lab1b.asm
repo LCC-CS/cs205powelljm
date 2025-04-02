@@ -1,5 +1,5 @@
 section .data
-    hello db "Hello, World!", 10 ; The string with a newline (ASCII 10)
+    hello db "Hello, 205!", 10 ; The string with a newline (ASCII 10)
     hello_len equ $ - hello      ; Calculate the length of the string
 
 section .text
