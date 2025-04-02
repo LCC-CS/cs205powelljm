@@ -1,6 +1,6 @@
 section .data
-    hello db "Hello, World!", 10  ; The string with a newline (ASCII 10)
-    hello_len equ $ - hello       ; Calculate the length of the string
+    hello db "Hello, World!", 10 ; The string with a newline (ASCII 10)
+    hello_len equ $ - hello      ; Calculate the length of the string
 
 section .text
     global _start                ; Entry point for the linker
@@ -15,6 +15,5 @@ _start:
 
     ; Exit system call (sys_exit)
     mov rax, 60        ; syscall: sys_exit
-    xor rdi, rdi       ; status 0
+    xor rdi, rdi       ; status 0 (same as mov rdi, 0)
     syscall            ; invoke the system call
-

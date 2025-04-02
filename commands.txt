@@ -1,0 +1,4 @@
+#SCP file from local machine to remote server
+scp ~/systems/lab1/lab1.png powellj199@citstudent.lanecc.edu:/home/powellj199/cs205powelljm/lab1/
+
+
