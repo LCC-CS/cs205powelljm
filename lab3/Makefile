@@ -5,13 +5,13 @@ CFLAGS = -g  # Include debug symbols for GDB
 # Build all programs
 all: $(PROGS)
 
-# Compile lab3a.c
-lab2a: lab3a.c
-	$(CC) $(CFLAGS) lab3a.c -o lab3a
+# Compile lab3b.c
+lab2a: lab3b.c
+	$(CC) $(CFLAGS) lab3b.c -o lab3b
 
 # Run test
-test: lab3a
-	./lab3a 5
+test: lab3b
+	./lab3b 5
 
 # Clean up
 clean:
